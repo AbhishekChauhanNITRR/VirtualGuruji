@@ -87,7 +87,6 @@ exports.categoryPageDetails = async (req, res) => {
         // Get Courses for different categories
         const differentCategories = await Category.find({_id : { $ne: updatedObjectId}}).populate("course").exec();
 
-// H.W. ---->>>  Get top selling courses :- TODO
 
         // console.log("Success returning everything");
         // Return response
