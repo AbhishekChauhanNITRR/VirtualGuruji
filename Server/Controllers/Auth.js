@@ -210,7 +210,7 @@ exports.login = async (req, res) => {
     }
 }
 
-// Change Password : Do it by yourself
+// Change Password : 
 exports.changePassword = async (req, res) => {
     try{
         const {oldPassword, newPassword} = req.body;
