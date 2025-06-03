@@ -240,7 +240,6 @@ exports.changePassword = async (req, res) => {
         }
         // console.log("User :- ", user);
 
-// H.W. -->  Check whether Old Password is Correct or not
         const match = await bcrypt.compare(oldPassword, user.password);
         if(! match){
             return res.status(400).json({
