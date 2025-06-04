@@ -29,7 +29,6 @@ exports.createCourse = async (req, res) => {
         // Required bcoz instructors object id is required to store in Course
         const userId = req.user.id;
 
-// TODO :-  Verify that userId and Instructor._id are same or different
         const instructorDetails = await User.findById({_id: userId}, {
             accountType: "Instructor"
         });
