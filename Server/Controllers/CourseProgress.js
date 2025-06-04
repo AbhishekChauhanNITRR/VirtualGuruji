@@ -15,7 +15,6 @@ exports.updateCourseProgress = async(req, res) => {
             });
         }
 
-        // console.log("Sub Section validation done");
 
         // Check for old entry
         let courseProgress = await CourseProgress.findOne(
