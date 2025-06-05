@@ -113,7 +113,6 @@ exports.deleteAccount = async(req, res) => {
         // Delete User
         await User.findByIdAndDelete({_id: userId});
 
-    // H.W. --> Un enroll user from all enrolled courses
 
         // Return response
         return res.status(200).json({
