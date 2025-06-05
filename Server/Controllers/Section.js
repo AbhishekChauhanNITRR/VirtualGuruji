@@ -26,7 +26,6 @@ exports.createSection = async (req, res) => {
             {new: true}
         );
 
-        // HW :- Use populate to replace section/ sub-sections both in the updatedCourseDetails
         const details = await Course.findById(courseId).populate({
             path: "courseContent",
             populate: {
