@@ -46,7 +46,6 @@ exports.createSubSection = async (req, res) => {
             }
         }).exec();
 
-// H.W. =>  Console.log() updated details after adding populate query
 
         return res.status(200).json({
             success: true,
@@ -61,7 +60,7 @@ exports.createSubSection = async (req, res) => {
     }
 };
 
-// Update Sub-section handler :- H.W.
+// Update Sub-section handler
 exports.updateSubSection = async (req, res) => {
     try{
         const {title, timeDuration=0, description, subSectionId, courseId} = req.body;
@@ -112,7 +111,7 @@ exports.updateSubSection = async (req, res) => {
     }
 }
 
-// Delete Sub - Section Handler :- H.W.
+// Delete Sub - Section Handler 
 exports.deleteSubSection = async (req, res) => {
     try{
         const {subSectionId, sectionId, courseId} = req.body;
